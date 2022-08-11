@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Jogo da Forca - Hangman Game</h1>
+    <p>Encontre a palavra oculta</p>
+  </header>
+      <p id="palavraLabel"></p>
+      <form name="formularioForca">
+        <input name="inputLetra" type="text" size="5" maxlength="1">
+        <input name="botaoTentarLetra" type="button" value="Tentar Letra" onClick="tentarLetra()">
+        
+        <p id="letrasErradas">Letras erradas:</p>
+        <br />
+        <input name="refresh" type="button" value="Recomeçar" onClick="location.reload()">
+      </form>
+
+      <footer>
+        <p class="copyright">&copy; Desenvolvido por Maria Emília - 2022</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>
